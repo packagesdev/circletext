@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F406C1011B7A591800C0035C /* CIRCUserDefaults+Constants.h in Headers */ = {isa = PBXBuildFile; fileRef = F406C0FF1B7A591800C0035C /* CIRCUserDefaults+Constants.h */; };
+		F406C1021B7A591800C0035C /* CIRCUserDefaults+Constants.m in Sources */ = {isa = PBXBuildFile; fileRef = F406C1001B7A591800C0035C /* CIRCUserDefaults+Constants.m */; };
+		F40D04CF1BD6E2230005EF54 /* CIRCDefinitionSettingsView.h in Headers */ = {isa = PBXBuildFile; fileRef = F40D04CD1BD6E2230005EF54 /* CIRCDefinitionSettingsView.h */; };
+		F40D04D01BD6E2230005EF54 /* CIRCDefinitionSettingsView.m in Sources */ = {isa = PBXBuildFile; fileRef = F40D04CE1BD6E2230005EF54 /* CIRCDefinitionSettingsView.m */; };
+		F43DA6A91B7A9EB70082FA6F /* DefaultSettings.plist in Resources */ = {isa = PBXBuildFile; fileRef = F43DA6A81B7A9EB70082FA6F /* DefaultSettings.plist */; };
+		F43DA6AE1B7AA12F0082FA6F /* CIRCLightGrayBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = F43DA6AA1B7AA12F0082FA6F /* CIRCLightGrayBackgroundView.h */; };
+		F43DA6AF1B7AA12F0082FA6F /* CIRCLightGrayBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F43DA6AB1B7AA12F0082FA6F /* CIRCLightGrayBackgroundView.m */; };
+		F43DA6B01B7AA12F0082FA6F /* CIRCSecondaryBox.h in Headers */ = {isa = PBXBuildFile; fileRef = F43DA6AC1B7AA12F0082FA6F /* CIRCSecondaryBox.h */; };
+		F43DA6B11B7AA12F0082FA6F /* CIRCSecondaryBox.m in Sources */ = {isa = PBXBuildFile; fileRef = F43DA6AD1B7AA12F0082FA6F /* CIRCSecondaryBox.m */; };
+		F45C61481BD98F41006AB9E0 /* thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = F45C61461BD98F41006AB9E0 /* thumbnail.png */; };
+		F45C61491BD98F41006AB9E0 /* thumbnail@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F45C61471BD98F41006AB9E0 /* thumbnail@2x.png */; };
+		F45C92301B7BFA81000E01F2 /* FONT.RAW in Resources */ = {isa = PBXBuildFile; fileRef = F4E0576A1B7B35ED0093FAE1 /* FONT.RAW */; };
+		F45C92311B7BFB06000E01F2 /* CIRCConfigurationWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F45C92331B7BFB06000E01F2 /* CIRCConfigurationWindowController.xib */; };
+		F4A8CA961BD9523000C55802 /* CIRCDefinitionsTableView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A8CA941BD9523000C55802 /* CIRCDefinitionsTableView.h */; };
+		F4A8CA971BD9523000C55802 /* CIRCDefinitionsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A8CA951BD9523000C55802 /* CIRCDefinitionsTableView.m */; };
+		F4A8CA9A1BD953AC00C55802 /* CIRCCloseButton.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A8CA981BD953AC00C55802 /* CIRCCloseButton.h */; };
+		F4A8CA9B1BD953AC00C55802 /* CIRCCloseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A8CA991BD953AC00C55802 /* CIRCCloseButton.m */; };
+		F4D7AE401B79EEC900B72BA9 /* CIRCSentenceFormatter.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D7AE3E1B79EEC900B72BA9 /* CIRCSentenceFormatter.h */; };
+		F4D7AE411B79EEC900B72BA9 /* CIRCSentenceFormatter.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4D7AE3F1B79EEC900B72BA9 /* CIRCSentenceFormatter.mm */; };
+		F4D7AE441B79EFD200B72BA9 /* CIRCSettings.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D7AE421B79EFD200B72BA9 /* CIRCSettings.h */; };
+		F4D7AE451B79EFD200B72BA9 /* CIRCSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D7AE431B79EFD200B72BA9 /* CIRCSettings.m */; };
+		F4D7AE491B79F03700B72BA9 /* CIRCConfigurationWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4D7AE461B79F03700B72BA9 /* CIRCConfigurationWindowController.h */; };
+		F4D7AE4A1B79F03700B72BA9 /* CIRCConfigurationWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4D7AE471B79F03700B72BA9 /* CIRCConfigurationWindowController.m */; };
+		F4E057671B7B35E60093FAE1 /* FONT.H in Headers */ = {isa = PBXBuildFile; fileRef = F4E057641B7B35E60093FAE1 /* FONT.H */; };
+		F4E057681B7B35E60093FAE1 /* Pawn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F4E057651B7B35E60093FAE1 /* Pawn.cpp */; };
+		F4E057691B7B35E60093FAE1 /* Pawn.h in Headers */ = {isa = PBXBuildFile; fileRef = F4E057661B7B35E60093FAE1 /* Pawn.h */; };
+		F4F29D731BD82CEF0022F225 /* CIRCDefinitionSettingsRowView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4F29D711BD82CEF0022F225 /* CIRCDefinitionSettingsRowView.h */; };
+		F4F29D741BD82CEF0022F225 /* CIRCDefinitionSettingsRowView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F29D721BD82CEF0022F225 /* CIRCDefinitionSettingsRowView.m */; };
+		F4FAD01A1B794A2100C8C01A /* CircleTextSaverView.h in Headers */ = {isa = PBXBuildFile; fileRef = F4FAD0191B794A2100C8C01A /* CircleTextSaverView.h */; };
+		F4FAD01C1B794A2100C8C01A /* CircleTextSaverView.mm in Sources */ = {isa = PBXBuildFile; fileRef = F4FAD01B1B794A2100C8C01A /* CircleTextSaverView.mm */; };
+		F4FAD02A1B794B2B00C8C01A /* CIRCAboutBoxWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = F4FAD0251B794B2B00C8C01A /* CIRCAboutBoxWindowController.h */; };
+		F4FAD02B1B794B2B00C8C01A /* CIRCAboutBoxWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FAD0261B794B2B00C8C01A /* CIRCAboutBoxWindowController.m */; };
+		F4FAD02C1B794B2B00C8C01A /* CIRCAboutBoxWindowController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4FAD0271B794B2B00C8C01A /* CIRCAboutBoxWindowController.xib */; };
+		F4FAD02D1B794B2B00C8C01A /* CIRCWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = F4FAD0281B794B2B00C8C01A /* CIRCWindow.h */; };
+		F4FAD02E1B794B2B00C8C01A /* CIRCWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F4FAD0291B794B2B00C8C01A /* CIRCWindow.m */; };
+		F4FAD0311B794BA600C8C01A /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4FAD02F1B794BA600C8C01A /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F406C0FF1B7A591800C0035C /* CIRCUserDefaults+Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CIRCUserDefaults+Constants.h"; sourceTree = "<group>"; };
+		F406C1001B7A591800C0035C /* CIRCUserDefaults+Constants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CIRCUserDefaults+Constants.m"; sourceTree = "<group>"; };
+		F40D04CD1BD6E2230005EF54 /* CIRCDefinitionSettingsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCDefinitionSettingsView.h; sourceTree = "<group>"; };
+		F40D04CE1BD6E2230005EF54 /* CIRCDefinitionSettingsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCDefinitionSettingsView.m; sourceTree = "<group>"; };
+		F43DA6A81B7A9EB70082FA6F /* DefaultSettings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = DefaultSettings.plist; sourceTree = "<group>"; };
+		F43DA6AA1B7AA12F0082FA6F /* CIRCLightGrayBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCLightGrayBackgroundView.h; sourceTree = "<group>"; };
+		F43DA6AB1B7AA12F0082FA6F /* CIRCLightGrayBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCLightGrayBackgroundView.m; sourceTree = "<group>"; };
+		F43DA6AC1B7AA12F0082FA6F /* CIRCSecondaryBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCSecondaryBox.h; sourceTree = "<group>"; };
+		F43DA6AD1B7AA12F0082FA6F /* CIRCSecondaryBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCSecondaryBox.m; sourceTree = "<group>"; };
+		F45C61461BD98F41006AB9E0 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
+		F45C61471BD98F41006AB9E0 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
+		F45C92321B7BFB06000E01F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CIRCConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F4A8CA941BD9523000C55802 /* CIRCDefinitionsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCDefinitionsTableView.h; sourceTree = "<group>"; };
+		F4A8CA951BD9523000C55802 /* CIRCDefinitionsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCDefinitionsTableView.m; sourceTree = "<group>"; };
+		F4A8CA981BD953AC00C55802 /* CIRCCloseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCCloseButton.h; sourceTree = "<group>"; };
+		F4A8CA991BD953AC00C55802 /* CIRCCloseButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCCloseButton.m; sourceTree = "<group>"; };
+		F4A8CA9C1BD9630900C55802 /* fr */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = fr; path = fr.lproj/CIRCConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F4A8CA9D1BD9630900C55802 /* fr */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F4D7AE3E1B79EEC900B72BA9 /* CIRCSentenceFormatter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCSentenceFormatter.h; sourceTree = "<group>"; };
+		F4D7AE3F1B79EEC900B72BA9 /* CIRCSentenceFormatter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CIRCSentenceFormatter.mm; sourceTree = "<group>"; };
+		F4D7AE421B79EFD200B72BA9 /* CIRCSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCSettings.h; sourceTree = "<group>"; };
+		F4D7AE431B79EFD200B72BA9 /* CIRCSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCSettings.m; sourceTree = "<group>"; };
+		F4D7AE461B79F03700B72BA9 /* CIRCConfigurationWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCConfigurationWindowController.h; sourceTree = "<group>"; };
+		F4D7AE471B79F03700B72BA9 /* CIRCConfigurationWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCConfigurationWindowController.m; sourceTree = "<group>"; };
+		F4E057641B7B35E60093FAE1 /* FONT.H */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = FONT.H; path = "PC Source/FONT.H"; sourceTree = "<group>"; };
+		F4E057651B7B35E60093FAE1 /* Pawn.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Pawn.cpp; path = "PC Source/Pawn.cpp"; sourceTree = "<group>"; };
+		F4E057661B7B35E60093FAE1 /* Pawn.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = Pawn.h; path = "PC Source/Pawn.h"; sourceTree = "<group>"; };
+		F4E0576A1B7B35ED0093FAE1 /* FONT.RAW */ = {isa = PBXFileReference; lastKnownFileType = file; name = FONT.RAW; path = "PC Source/FONT.RAW"; sourceTree = "<group>"; };
+		F4F29D711BD82CEF0022F225 /* CIRCDefinitionSettingsRowView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCDefinitionSettingsRowView.h; sourceTree = "<group>"; };
+		F4F29D721BD82CEF0022F225 /* CIRCDefinitionSettingsRowView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCDefinitionSettingsRowView.m; sourceTree = "<group>"; };
+		F4FAD0141B794A2100C8C01A /* CircleText.saver */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CircleText.saver; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4FAD0181B794A2100C8C01A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4FAD0191B794A2100C8C01A /* CircleTextSaverView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircleTextSaverView.h; sourceTree = "<group>"; };
+		F4FAD01B1B794A2100C8C01A /* CircleTextSaverView.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CircleTextSaverView.mm; sourceTree = "<group>"; };
+		F4FAD0251B794B2B00C8C01A /* CIRCAboutBoxWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCAboutBoxWindowController.h; sourceTree = "<group>"; };
+		F4FAD0261B794B2B00C8C01A /* CIRCAboutBoxWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCAboutBoxWindowController.m; sourceTree = "<group>"; };
+		F4FAD0271B794B2B00C8C01A /* CIRCAboutBoxWindowController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CIRCAboutBoxWindowController.xib; sourceTree = "<group>"; };
+		F4FAD0281B794B2B00C8C01A /* CIRCWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCWindow.h; sourceTree = "<group>"; };
+		F4FAD0291B794B2B00C8C01A /* CIRCWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCWindow.m; sourceTree = "<group>"; };
+		F4FAD0301B794BA600C8C01A /* en */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4FAD0101B794A2100C8C01A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F4E057631B7B35D10093FAE1 /* PC Source */ = {
+			isa = PBXGroup;
+			children = (
+				F4E057641B7B35E60093FAE1 /* FONT.H */,
+				F4E057661B7B35E60093FAE1 /* Pawn.h */,
+				F4E057651B7B35E60093FAE1 /* Pawn.cpp */,
+				F4E0576A1B7B35ED0093FAE1 /* FONT.RAW */,
+			);
+			name = "PC Source";
+			sourceTree = "<group>";
+		};
+		F4FAD00A1B794A2100C8C01A = {
+			isa = PBXGroup;
+			children = (
+				F4FAD0161B794A2100C8C01A /* CircleText */,
+				F4FAD0151B794A2100C8C01A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F4FAD0151B794A2100C8C01A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4FAD0141B794A2100C8C01A /* CircleText.saver */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4FAD0161B794A2100C8C01A /* CircleText */ = {
+			isa = PBXGroup;
+			children = (
+				F406C0FF1B7A591800C0035C /* CIRCUserDefaults+Constants.h */,
+				F406C1001B7A591800C0035C /* CIRCUserDefaults+Constants.m */,
+				F4E057631B7B35D10093FAE1 /* PC Source */,
+				F4D7AE421B79EFD200B72BA9 /* CIRCSettings.h */,
+				F4D7AE431B79EFD200B72BA9 /* CIRCSettings.m */,
+				F4FAD0191B794A2100C8C01A /* CircleTextSaverView.h */,
+				F4FAD01B1B794A2100C8C01A /* CircleTextSaverView.mm */,
+				F4FAD0231B794B0500C8C01A /* Configuration */,
+				F4FAD0171B794A2100C8C01A /* Resources */,
+			);
+			path = CircleText;
+			sourceTree = "<group>";
+		};
+		F4FAD0171B794A2100C8C01A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F4FAD0181B794A2100C8C01A /* Info.plist */,
+				F43DA6A81B7A9EB70082FA6F /* DefaultSettings.plist */,
+				F4FAD02F1B794BA600C8C01A /* Localizable.strings */,
+				F4FAD0221B794AFD00C8C01A /* images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		F4FAD0221B794AFD00C8C01A /* images */ = {
+			isa = PBXGroup;
+			children = (
+				F45C61461BD98F41006AB9E0 /* thumbnail.png */,
+				F45C61471BD98F41006AB9E0 /* thumbnail@2x.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
+		F4FAD0231B794B0500C8C01A /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				F4FAD0241B794B0C00C8C01A /* Custom Views */,
+				F4FAD0251B794B2B00C8C01A /* CIRCAboutBoxWindowController.h */,
+				F4FAD0261B794B2B00C8C01A /* CIRCAboutBoxWindowController.m */,
+				F4FAD0271B794B2B00C8C01A /* CIRCAboutBoxWindowController.xib */,
+				F4D7AE461B79F03700B72BA9 /* CIRCConfigurationWindowController.h */,
+				F4D7AE471B79F03700B72BA9 /* CIRCConfigurationWindowController.m */,
+				F45C92331B7BFB06000E01F2 /* CIRCConfigurationWindowController.xib */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		F4FAD0241B794B0C00C8C01A /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				F4A8CA981BD953AC00C55802 /* CIRCCloseButton.h */,
+				F4A8CA991BD953AC00C55802 /* CIRCCloseButton.m */,
+				F40D04CD1BD6E2230005EF54 /* CIRCDefinitionSettingsView.h */,
+				F40D04CE1BD6E2230005EF54 /* CIRCDefinitionSettingsView.m */,
+				F4F29D711BD82CEF0022F225 /* CIRCDefinitionSettingsRowView.h */,
+				F4F29D721BD82CEF0022F225 /* CIRCDefinitionSettingsRowView.m */,
+				F4A8CA941BD9523000C55802 /* CIRCDefinitionsTableView.h */,
+				F4A8CA951BD9523000C55802 /* CIRCDefinitionsTableView.m */,
+				F4D7AE3E1B79EEC900B72BA9 /* CIRCSentenceFormatter.h */,
+				F4D7AE3F1B79EEC900B72BA9 /* CIRCSentenceFormatter.mm */,
+				F43DA6AA1B7AA12F0082FA6F /* CIRCLightGrayBackgroundView.h */,
+				F43DA6AB1B7AA12F0082FA6F /* CIRCLightGrayBackgroundView.m */,
+				F43DA6AC1B7AA12F0082FA6F /* CIRCSecondaryBox.h */,
+				F43DA6AD1B7AA12F0082FA6F /* CIRCSecondaryBox.m */,
+				F4FAD0281B794B2B00C8C01A /* CIRCWindow.h */,
+				F4FAD0291B794B2B00C8C01A /* CIRCWindow.m */,
+			);
+			name = "Custom Views";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		F4FAD0111B794A2100C8C01A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4D7AE491B79F03700B72BA9 /* CIRCConfigurationWindowController.h in Headers */,
+				F4FAD01A1B794A2100C8C01A /* CircleTextSaverView.h in Headers */,
+				F43DA6AE1B7AA12F0082FA6F /* CIRCLightGrayBackgroundView.h in Headers */,
+				F4FAD02D1B794B2B00C8C01A /* CIRCWindow.h in Headers */,
+				F4A8CA961BD9523000C55802 /* CIRCDefinitionsTableView.h in Headers */,
+				F4A8CA9A1BD953AC00C55802 /* CIRCCloseButton.h in Headers */,
+				F40D04CF1BD6E2230005EF54 /* CIRCDefinitionSettingsView.h in Headers */,
+				F4FAD02A1B794B2B00C8C01A /* CIRCAboutBoxWindowController.h in Headers */,
+				F4F29D731BD82CEF0022F225 /* CIRCDefinitionSettingsRowView.h in Headers */,
+				F4E057691B7B35E60093FAE1 /* Pawn.h in Headers */,
+				F4E057671B7B35E60093FAE1 /* FONT.H in Headers */,
+				F4D7AE441B79EFD200B72BA9 /* CIRCSettings.h in Headers */,
+				F43DA6B01B7AA12F0082FA6F /* CIRCSecondaryBox.h in Headers */,
+				F406C1011B7A591800C0035C /* CIRCUserDefaults+Constants.h in Headers */,
+				F4D7AE401B79EEC900B72BA9 /* CIRCSentenceFormatter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F4FAD0131B794A2100C8C01A /* CircleText */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4FAD01F1B794A2200C8C01A /* Build configuration list for PBXNativeTarget "CircleText" */;
+			buildPhases = (
+				F4FAD00F1B794A2100C8C01A /* Sources */,
+				F4FAD0101B794A2100C8C01A /* Frameworks */,
+				F4FAD0111B794A2100C8C01A /* Headers */,
+				F4FAD0121B794A2100C8C01A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CircleText;
+			productName = CircleText;
+			productReference = F4FAD0141B794A2100C8C01A /* CircleText.saver */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4FAD00B1B794A2100C8C01A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					F4FAD0131B794A2100C8C01A = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = F4FAD00E1B794A2100C8C01A /* Build configuration list for PBXProject "CircleText" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				fr,
+			);
+			mainGroup = F4FAD00A1B794A2100C8C01A;
+			productRefGroup = F4FAD0151B794A2100C8C01A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4FAD0131B794A2100C8C01A /* CircleText */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4FAD0121B794A2100C8C01A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F45C92301B7BFA81000E01F2 /* FONT.RAW in Resources */,
+				F4FAD02C1B794B2B00C8C01A /* CIRCAboutBoxWindowController.xib in Resources */,
+				F45C61481BD98F41006AB9E0 /* thumbnail.png in Resources */,
+				F45C61491BD98F41006AB9E0 /* thumbnail@2x.png in Resources */,
+				F43DA6A91B7A9EB70082FA6F /* DefaultSettings.plist in Resources */,
+				F4FAD0311B794BA600C8C01A /* Localizable.strings in Resources */,
+				F45C92311B7BFB06000E01F2 /* CIRCConfigurationWindowController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4FAD00F1B794A2100C8C01A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F40D04D01BD6E2230005EF54 /* CIRCDefinitionSettingsView.m in Sources */,
+				F4A8CA9B1BD953AC00C55802 /* CIRCCloseButton.m in Sources */,
+				F4D7AE411B79EEC900B72BA9 /* CIRCSentenceFormatter.mm in Sources */,
+				F4FAD02B1B794B2B00C8C01A /* CIRCAboutBoxWindowController.m in Sources */,
+				F4FAD01C1B794A2100C8C01A /* CircleTextSaverView.mm in Sources */,
+				F4A8CA971BD9523000C55802 /* CIRCDefinitionsTableView.m in Sources */,
+				F4D7AE4A1B79F03700B72BA9 /* CIRCConfigurationWindowController.m in Sources */,
+				F4D7AE451B79EFD200B72BA9 /* CIRCSettings.m in Sources */,
+				F4E057681B7B35E60093FAE1 /* Pawn.cpp in Sources */,
+				F4FAD02E1B794B2B00C8C01A /* CIRCWindow.m in Sources */,
+				F4F29D741BD82CEF0022F225 /* CIRCDefinitionSettingsRowView.m in Sources */,
+				F406C1021B7A591800C0035C /* CIRCUserDefaults+Constants.m in Sources */,
+				F43DA6B11B7AA12F0082FA6F /* CIRCSecondaryBox.m in Sources */,
+				F43DA6AF1B7AA12F0082FA6F /* CIRCLightGrayBackgroundView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F45C92331B7BFB06000E01F2 /* CIRCConfigurationWindowController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F45C92321B7BFB06000E01F2 /* en */,
+				F4A8CA9C1BD9630900C55802 /* fr */,
+			);
+			name = CIRCConfigurationWindowController.xib;
+			sourceTree = "<group>";
+		};
+		F4FAD02F1B794BA600C8C01A /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4FAD0301B794BA600C8C01A /* en */,
+				F4A8CA9D1BD9630900C55802 /* fr */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4FAD01D1B794A2200C8C01A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F4FAD01E1B794A2200C8C01A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F4FAD0201B794A2200C8C01A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CircleText/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Debug;
+		};
+		F4FAD0211B794A2200C8C01A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CircleText/Info.plist;
+				INSTALL_PATH = "$(HOME)/Library/Screen Savers";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = saver;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4FAD00E1B794A2100C8C01A /* Build configuration list for PBXProject "CircleText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4FAD01D1B794A2200C8C01A /* Debug */,
+				F4FAD01E1B794A2200C8C01A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4FAD01F1B794A2200C8C01A /* Build configuration list for PBXNativeTarget "CircleText" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4FAD0201B794A2200C8C01A /* Debug */,
+				F4FAD0211B794A2200C8C01A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4FAD00B1B794A2100C8C01A /* Project object */;
+}
