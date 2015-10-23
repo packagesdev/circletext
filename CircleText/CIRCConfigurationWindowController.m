@@ -28,7 +28,7 @@
 #import "CIRCDefinitionSettingsRowView.h"
 #import "CIRCDefinitionSettingsView.h"
 
-@interface CIRCConfigurationWindowController () <CIRCWindowDelegate,NSTableViewDataSource,NSTableViewDelegate>
+@interface CIRCConfigurationWindowController () <CIRCWindowDelegate,NSTableViewDataSource,NSTableViewDelegate,NSTextFieldDelegate>
 {
 	IBOutlet NSTableView *_tableView;
 	
@@ -302,6 +302,12 @@
 	[self tableViewSelectionDidChange:[NSNotification notificationWithName:NSTableViewSelectionDidChangeNotification object:_tableView]];
 }
 
+- (void)control:(NSControl *)inControl didFailToValidatePartialString:(NSString *)inPartialString errorDescription:(NSString *)inError
+{
+	if ([inError isEqualToString:@"Error"]==YES)
+		NSBeep();
+}
+
 #pragma mark - TableView Data Source
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)inTableView
@@ -338,6 +344,7 @@
 			
 			[tCellView.sentenceTextField setFormatter:_sentenceFormatter];
 			[tCellView.sentenceTextField setStringValue:tDefnitionSettings.text];
+			[tCellView.sentenceTextField setDelegate:self];
 			
 			[tCellView.centerOffsetXSlider setIntegerValue:tDefnitionSettings.xOffset];
 			
