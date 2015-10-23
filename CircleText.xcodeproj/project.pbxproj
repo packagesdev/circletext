@@ -55,6 +55,8 @@
 		F43DA6AB1B7AA12F0082FA6F /* CIRCLightGrayBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCLightGrayBackgroundView.m; sourceTree = "<group>"; };
 		F43DA6AC1B7AA12F0082FA6F /* CIRCSecondaryBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCSecondaryBox.h; sourceTree = "<group>"; };
 		F43DA6AD1B7AA12F0082FA6F /* CIRCSecondaryBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCSecondaryBox.m; sourceTree = "<group>"; };
+		F45505601BDAD359006E2676 /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/CIRCConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F45505611BDAD359006E2676 /* ja */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F45C61461BD98F41006AB9E0 /* thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thumbnail.png; sourceTree = "<group>"; };
 		F45C61471BD98F41006AB9E0 /* thumbnail@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "thumbnail@2x.png"; sourceTree = "<group>"; };
 		F45C92321B7BFB06000E01F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CIRCConfigurationWindowController.xib; sourceTree = "<group>"; };
@@ -274,6 +276,7 @@
 				es,
 				de,
 				sv,
+				ja,
 			);
 			mainGroup = F4FAD00A1B794A2100C8C01A;
 			productRefGroup = F4FAD0151B794A2100C8C01A /* Products */;
@@ -335,6 +338,7 @@
 				F47A2F5C1BDA5569001EC178 /* es */,
 				F496AE691BDA8BCA0039D688 /* de */,
 				F46FA99F1BDAAC28003E148B /* sv */,
+				F45505601BDAD359006E2676 /* ja */,
 			);
 			name = CIRCConfigurationWindowController.xib;
 			sourceTree = "<group>";
@@ -347,6 +351,7 @@
 				F47A2F5D1BDA5569001EC178 /* es */,
 				F496AE6A1BDA8BCA0039D688 /* de */,
 				F46FA9A01BDAAC28003E148B /* sv */,
+				F45505611BDAD359006E2676 /* ja */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
