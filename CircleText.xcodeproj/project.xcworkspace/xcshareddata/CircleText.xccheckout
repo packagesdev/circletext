@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>750A9EF7-8F4D-4D2A-9519-74B46111AE26</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CircleText</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>ACA7D14A9353BA3E868DBBD5460B664698691499</key>
+		<string>https://github.com/packagesdev/circletext.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CircleText.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>ACA7D14A9353BA3E868DBBD5460B664698691499</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/packagesdev/circletext.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>ACA7D14A9353BA3E868DBBD5460B664698691499</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>ACA7D14A9353BA3E868DBBD5460B664698691499</string>
+			<key>IDESourceControlWCCName</key>
+			<string>circletext</string>
+		</dict>
+	</array>
+</dict>
+</plist>
