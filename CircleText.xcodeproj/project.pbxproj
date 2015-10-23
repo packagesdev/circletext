@@ -60,6 +60,8 @@
 		F45C92321B7BFB06000E01F2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/CIRCConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F47A2F5C1BDA5569001EC178 /* es */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = es; path = es.lproj/CIRCConfigurationWindowController.xib; sourceTree = "<group>"; };
 		F47A2F5D1BDA5569001EC178 /* es */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F496AE691BDA8BCA0039D688 /* de */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = de; path = de.lproj/CIRCConfigurationWindowController.xib; sourceTree = "<group>"; };
+		F496AE6A1BDA8BCA0039D688 /* de */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
 		F4A8CA941BD9523000C55802 /* CIRCDefinitionsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCDefinitionsTableView.h; sourceTree = "<group>"; };
 		F4A8CA951BD9523000C55802 /* CIRCDefinitionsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CIRCDefinitionsTableView.m; sourceTree = "<group>"; };
 		F4A8CA981BD953AC00C55802 /* CIRCCloseButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CIRCCloseButton.h; sourceTree = "<group>"; };
@@ -268,6 +270,7 @@
 				en,
 				fr,
 				es,
+				de,
 			);
 			mainGroup = F4FAD00A1B794A2100C8C01A;
 			productRefGroup = F4FAD0151B794A2100C8C01A /* Products */;
@@ -327,6 +330,7 @@
 				F45C92321B7BFB06000E01F2 /* en */,
 				F4A8CA9C1BD9630900C55802 /* fr */,
 				F47A2F5C1BDA5569001EC178 /* es */,
+				F496AE691BDA8BCA0039D688 /* de */,
 			);
 			name = CIRCConfigurationWindowController.xib;
 			sourceTree = "<group>";
@@ -337,6 +341,7 @@
 				F4FAD0301B794BA600C8C01A /* en */,
 				F4A8CA9D1BD9630900C55802 /* fr */,
 				F47A2F5D1BDA5569001EC178 /* es */,
+				F496AE6A1BDA8BCA0039D688 /* de */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
