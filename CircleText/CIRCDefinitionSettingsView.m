@@ -19,6 +19,13 @@
 
 @implementation CIRCDefinitionSettingsView
 
+- (BOOL)isOpaque
+{
+	return NO;
+}
+
+#pragma mark -
+
 - (void)drawRect:(NSRect)inRect
 {
 	NSRect tBounds=[self bounds];
