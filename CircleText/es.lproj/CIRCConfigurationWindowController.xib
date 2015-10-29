@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="7525" systemVersion="14F27" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
         <deployment identifier="macosx"/>
+        <development version="5100" identifier="xcode"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="7525"/>
     </dependencies>
     <objects>
@@ -69,12 +70,12 @@ DQ
                     <scrollView autohidesScrollers="YES" horizontalLineScroll="276" horizontalPageScroll="10" verticalLineScroll="276" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" id="zHY-mc-ItY">
                         <rect key="frame" x="-1" y="164" width="541" height="363"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" id="fXc-pl-ffb">
+                        <clipView key="contentView" copiesOnScroll="NO" id="fXc-pl-ffb">
                             <rect key="frame" x="1" y="1" width="539" height="361"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <tableView verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" columnReordering="NO" columnResizing="NO" autosaveColumns="NO" rowHeight="274" rowSizeStyle="automatic" viewBased="YES" floatsGroupRows="NO" id="p44-ev-B91" customClass="CIRCDefinitionsTableView">
-                                    <rect key="frame" x="0.0" y="0.0" width="491" height="0.0"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="539" height="0.0"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
