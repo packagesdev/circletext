@@ -177,6 +177,13 @@
 		_OpenGLIncompatibilityDetected=YES;
 		return;
 	}
+	
+	if (_openGLView!=nil)
+	{
+		[_openGLView removeFromSuperview];
+		_openGLView=nil;
+	}
+	
 	_openGLView = [[NSOpenGLView alloc] initWithFrame:[self bounds] pixelFormat:tFormat];
 	
 	if (_openGLView!=nil)
