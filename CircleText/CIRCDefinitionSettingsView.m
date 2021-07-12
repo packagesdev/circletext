@@ -35,9 +35,9 @@
 	
 	NSBezierPath * tBezierPath=[NSBezierPath bezierPathWithRoundedRect:tRoundedRect xRadius:RADIUS yRadius:RADIUS];
 	
-	[[NSColor whiteColor] setFill];
+	/*[[NSColor controlBackgroundColor] setFill];
 	
-	[tBezierPath fill];
+	[tBezierPath fill];*/
 
 	NSTableRowView * tTableRowView=(NSTableRowView *)[self superview];
 	
@@ -49,7 +49,7 @@
 	}
 	else
 	{
-		[[NSColor lightGrayColor] setStroke];
+		[[NSColor tertiaryLabelColor] setStroke];
 		
 		[tBezierPath setLineWidth:1.5];
 	}

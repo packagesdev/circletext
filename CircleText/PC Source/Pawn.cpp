@@ -5,7 +5,7 @@
 #include <OpenGL/gl.h>
 #include <OpenGL/glu.h>
 #include "pawnres.h"
-#include "font.h"
+#include "FONT.H"
 #include <sys/time.h>
 #include "Pawn.h"
 #include <strings.h>

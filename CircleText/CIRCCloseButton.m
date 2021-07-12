@@ -20,9 +20,9 @@
 	// Draw the cross
 	
 	if ([self isHighlighted]==YES)
-		[[NSColor blackColor] set];
+		[[NSColor labelColor] set];
 	else
-		[[NSColor grayColor] set];
+		[[NSColor tertiaryLabelColor] set];
 	
 	CGFloat tHalfHeight=round(NSHeight(inCellFrame)*0.5);
 	NSPoint tCenter=NSMakePoint(round(NSMidX(inCellFrame)), NSMidY(inCellFrame));

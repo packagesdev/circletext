@@ -1,5 +1,5 @@
 /*
- Copyright (c) 2015, Stephane Sudre
+ Copyright (c) 2015-2018, Stephane Sudre
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -14,6 +14,29 @@
 #import "CIRCDefinitionSettingsRowView.h"
 
 @implementation CIRCDefinitionSettingsRowView
+
+- (NSBackgroundStyle)interiorBackgroundStyle
+{
+	NSBackgroundStyle tBackgroundStyle=[super interiorBackgroundStyle];
+	
+	if (self.isSelected==NO)
+		return tBackgroundStyle;
+	
+	switch(tBackgroundStyle)
+	{
+		case NSBackgroundStyleLight:
+			
+			return NSBackgroundStyleDark;
+			
+		case NSBackgroundStyleDark:
+			
+			return NSBackgroundStyleLight;
+
+		default:
+			
+			return NSBackgroundStyleDark;
+	}
+}
 
 - (void)drawSelectionInRect:(NSRect)inRect
 {

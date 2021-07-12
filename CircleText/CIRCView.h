@@ -1,5 +1,5 @@
 /*
- Copyright (c) 2015, Stephane Sudre
+ Copyright (c) 2018, Stephane Sudre
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -13,18 +13,8 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface CIRCDefinitionSettingsView : NSTableCellView
+@interface CIRCView : NSView
 
-	@property IBOutlet NSTextField *sentenceTextField;
-
-	@property IBOutlet NSSlider *centerOffsetXSlider;
-
-	@property IBOutlet NSSlider *centerOffsetYSlider;
-
-	@property IBOutlet NSSlider *radiusSlider;
-
-	@property IBOutlet NSSlider *scaleSlider;
-
-	@property IBOutlet NSSlider *rotationSpeedSlider;
+- (BOOL)isEffectiveAppareanceDarkAqua;
 
 @end

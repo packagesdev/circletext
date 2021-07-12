@@ -5,7 +5,7 @@
 
 @implementation CIRCDefinitionsTableView
 
-- (BOOL)validateProposedFirstResponder:(NSResponder *)inResponder forEvent:( NSEvent *)inEvent
+- (BOOL)validateProposedFirstResponder:(NSResponder *)inResponder forEvent:(NSEvent *)inEvent
 {
 	return YES;
 }

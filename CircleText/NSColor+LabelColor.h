@@ -1,5 +1,5 @@
 /*
- Copyright (c) 2015, Stephane Sudre
+ Copyright (c) 2018, Stephane Sudre
  All rights reserved.
  
  Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
@@ -13,18 +13,18 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface CIRCDefinitionSettingsView : NSTableCellView
+@interface NSColor ()
 
-	@property IBOutlet NSTextField *sentenceTextField;
++ (NSColor *)labelColor;
++ (NSColor *)secondaryLabelColor;
++ (NSColor *)tertiaryLabelColor;
++ (NSColor *)quaternaryLabelColor;
++ (NSColor *)containerBorderColor;
 
-	@property IBOutlet NSSlider *centerOffsetXSlider;
+@end
 
-	@property IBOutlet NSSlider *centerOffsetYSlider;
+@interface NSColor (LabelColor_WB)
 
-	@property IBOutlet NSSlider *radiusSlider;
-
-	@property IBOutlet NSSlider *scaleSlider;
-
-	@property IBOutlet NSSlider *rotationSpeedSlider;
++ (void)initializeMountainLion;
 
 @end

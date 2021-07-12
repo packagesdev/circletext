@@ -107,7 +107,7 @@
 {
 	[super windowDidLoad];
 	
-	_savedCancelButtonFrame=[_cancelButton frame];
+	_savedCancelButtonFrame=_cancelButton.frame;
 }
 
 #pragma mark -
@@ -122,7 +122,7 @@
 	
 	[self tableViewSelectionDidChange:[NSNotification notificationWithName:NSTableViewSelectionDidChangeNotification object:_tableView]];
 	
-	[_mainScreenCheckBox setState:(_mainScreenSetting==YES) ? NSOnState : NSOffState];
+	_mainScreenCheckBox.state=(_mainScreenSetting==YES) ? NSOnState : NSOffState;
 }
 
 #pragma mark -
@@ -134,7 +134,7 @@
 	if (sAboutBoxWindowController==nil)
 		sAboutBoxWindowController=[CIRCAboutBoxWindowController new];
 	
-	if ([sAboutBoxWindowController.window isVisible]==NO)
+	if (sAboutBoxWindowController.window.isVisible==NO)
 		[sAboutBoxWindowController.window center];
 	
 	[sAboutBoxWindowController.window makeKeyAndOrderFront:nil];
@@ -147,12 +147,12 @@
 	[self restoreUI];
 }
 
-- (IBAction)closeDialog:(id)sender
+- (IBAction)closeDialog:(NSButton *)sender
 {
 	NSString *tIdentifier = [[NSBundle bundleForClass:[self class]] bundleIdentifier];
 	ScreenSaverDefaults *tDefaults = [ScreenSaverDefaults defaultsForModuleWithName:tIdentifier];
 	
-	if ([sender tag]==NSModalResponseOK)
+	if (sender.tag==NSModalResponseOK)
 	{
 		// Scene Settings
 		
@@ -164,7 +164,7 @@
 		
 		// Main Screen Only
 		
-		_mainScreenSetting=([_mainScreenCheckBox state]==NSOnState);
+		_mainScreenSetting=(_mainScreenCheckBox.state=NSOnState);
 		
 		[tDefaults setBool:_mainScreenSetting forKey:CIRCUserDefaultsMainDisplayOnly];
 		
@@ -188,7 +188,7 @@
 	
 	NSArray * tDefinitionsArray=_circSettings.definitions;
 	
-	if (tRowIndex>=0 && tRowIndex<[tDefinitionsArray count])
+	if (tRowIndex>=0 && tRowIndex<tDefinitionsArray.count)
 	{
 		[_tableView beginUpdates];
 		[_tableView removeRowsAtIndexes:[NSIndexSet indexSetWithIndex:tRowIndex] withAnimation:NSTableViewAnimationEffectGap];
@@ -280,18 +280,18 @@
 	
 	[_tableView reloadData];
 	
-	[_tableView selectRowIndexes:[NSIndexSet indexSetWithIndex:[_circSettings.definitions count]-1] byExtendingSelection:NO];
+	[_tableView selectRowIndexes:[NSIndexSet indexSetWithIndex:_circSettings.definitions.count-1] byExtendingSelection:NO];
 	
 	[self tableViewSelectionDidChange:[NSNotification notificationWithName:NSTableViewSelectionDidChangeNotification object:_tableView]];
 	
 	// Make the view visible
 	
-	[_tableView scrollRowToVisible:[_tableView numberOfRows]-1];
+	[_tableView scrollRowToVisible:_tableView.numberOfRows-1];
 }
 
 - (IBAction)removeCircle:(id)sender
 {
-	NSIndexSet * tSelectedRowIndexSet=[_tableView selectedRowIndexes];
+	NSIndexSet * tSelectedRowIndexSet=_tableView.selectedRowIndexes;
 	
 	[_tableView beginUpdates];
 	[_tableView removeRowsAtIndexes:tSelectedRowIndexSet withAnimation:NSTableViewAnimationEffectGap];
@@ -313,7 +313,7 @@
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)inTableView
 {
 	if (inTableView==_tableView)
-		return [_circSettings.definitions count];
+		return _circSettings.definitions.count;
 	
 	return 0;
 }
@@ -334,27 +334,27 @@
 {
 	if (inTableView==_tableView)
 	{
-		NSString * tColumIdentifier=[inTableColumn identifier];
+		NSString * tColumIdentifier=inTableColumn.identifier;
 		
 		if ([tColumIdentifier isEqualToString:@"Settings"]==YES)
 		{
 			CIRCDefinitionSettingsView * tCellView=(CIRCDefinitionSettingsView *)[_tableView makeViewWithIdentifier:@"circle.definition.settings.view" owner:self];
 			
-			CIRCDefinitionSettings * tDefnitionSettings=_circSettings.definitions[inRow];
+			CIRCDefinitionSettings * tDefinitionSettings=_circSettings.definitions[inRow];
 			
 			[tCellView.sentenceTextField setFormatter:_sentenceFormatter];
-			[tCellView.sentenceTextField setStringValue:tDefnitionSettings.text];
+			[tCellView.sentenceTextField setStringValue:tDefinitionSettings.text];
 			[tCellView.sentenceTextField setDelegate:self];
 			
-			[tCellView.centerOffsetXSlider setIntegerValue:tDefnitionSettings.xOffset];
+			[tCellView.centerOffsetXSlider setIntegerValue:tDefinitionSettings.xOffset];
 			
-			[tCellView.centerOffsetYSlider setIntegerValue:tDefnitionSettings.yOffset];
+			[tCellView.centerOffsetYSlider setIntegerValue:tDefinitionSettings.yOffset];
 			
-			[tCellView.radiusSlider setIntegerValue:tDefnitionSettings.radius];
+			[tCellView.radiusSlider setIntegerValue:tDefinitionSettings.radius];
 			
-			[tCellView.scaleSlider setIntegerValue:tDefnitionSettings.scale];
+			[tCellView.scaleSlider setIntegerValue:tDefinitionSettings.scale];
 			
-			[tCellView.rotationSpeedSlider setIntegerValue:(-0.2*tDefnitionSettings.speed+11)];
+			[tCellView.rotationSpeedSlider setIntegerValue:(-0.2*tDefinitionSettings.speed+11)];
 			
 			return tCellView;
 		}
@@ -367,43 +367,43 @@
 
 - (void)tableViewSelectionDidChange:(NSNotification *)inNotification
 {
-	if (inNotification.object==_tableView)
-	{
-		NSUInteger tSelectedRowsCount=[_tableView numberOfSelectedRows];
-		NSBundle * tBundle=[NSBundle bundleForClass:[self class]];
-		
-		if (tSelectedRowsCount==0)
-		{
-			[_removeButton setEnabled:NO];
-			
-			switch([_circSettings.definitions count])
-			{
-				case 0:
-					
-					[_statusLabel setStringValue:NSLocalizedStringFromTableInBundle(@"No circles",@"Localizable",tBundle,@"")];
-					break;
-					
-				case 1:
-					
-					[_statusLabel setStringValue:NSLocalizedStringFromTableInBundle(@"1 circle",@"Localizable",tBundle,@"")];
-					break;
-					
-				default:
-					
-					[_statusLabel setStringValue:[NSString stringWithFormat:NSLocalizedStringFromTableInBundle(@"%d circles",@"Localizable",tBundle,@""),(int)[_circSettings.definitions count]]];
-					break;
-			}
-		}
-		else
-		{
-			[_removeButton setEnabled:YES];
-			
-			if (tSelectedRowsCount==1)
-				[_statusLabel setStringValue:[NSString stringWithFormat:NSLocalizedStringFromTableInBundle(@"1 of %d selected",@"Localizable",tBundle,@""),(int)[_circSettings.definitions count]]];
-			else
-				[_statusLabel setStringValue:[NSString stringWithFormat:NSLocalizedStringFromTableInBundle(@"%d of %d selected",@"Localizable",tBundle,@""),(int)tSelectedRowsCount,(int)[_circSettings.definitions count]]];
-		}
-	}
+	if (inNotification.object!=_tableView)
+        return;
+	
+    NSUInteger tSelectedRowsCount=_tableView.numberOfSelectedRows;
+    NSBundle * tBundle=[NSBundle bundleForClass:[self class]];
+    
+    if (tSelectedRowsCount==0)
+    {
+        _removeButton.enabled=NO;
+        
+        switch([_circSettings.definitions count])
+        {
+            case 0:
+                
+                _statusLabel.stringValue=NSLocalizedStringFromTableInBundle(@"No circles",@"Localizable",tBundle,@"");
+                break;
+                
+            case 1:
+                
+                _statusLabel.stringValue=NSLocalizedStringFromTableInBundle(@"1 circle",@"Localizable",tBundle,@"");
+                break;
+                
+            default:
+                
+                _statusLabel.stringValue=[NSString stringWithFormat:NSLocalizedStringFromTableInBundle(@"%d circles",@"Localizable",tBundle,@""),(int)[_circSettings.definitions count]];
+                break;
+        }
+    }
+    else
+    {
+        _removeButton.enabled=YES;
+        
+        if (tSelectedRowsCount==1)
+            _statusLabel.stringValue=[NSString stringWithFormat:NSLocalizedStringFromTableInBundle(@"1 of %d selected",@"Localizable",tBundle,@""),(int)[_circSettings.definitions count]];
+        else
+            _statusLabel.stringValue=[NSString stringWithFormat:NSLocalizedStringFromTableInBundle(@"%d of %d selected",@"Localizable",tBundle,@""),(int)tSelectedRowsCount,(int)[_circSettings.definitions count]];
+    }
 }
 
 #pragma mark -
@@ -412,10 +412,10 @@
 {
 	if ((inModifierFlags & NSAlternateKeyMask) == NSAlternateKeyMask)
 	{
-		NSRect tOriginalFrame=[_cancelButton frame];
+		NSRect tOriginalFrame=_cancelButton.frame;
 		
-		[_cancelButton setTitle:NSLocalizedStringFromTableInBundle(@"Reset",@"Localizable",[NSBundle bundleForClass:[self class]],@"")];
-		[_cancelButton setAction:@selector(resetDialogSettings:)];
+		_cancelButton.title=NSLocalizedStringFromTableInBundle(@"Reset",@"Localizable",[NSBundle bundleForClass:[self class]],@"");
+		_cancelButton.action=@selector(resetDialogSettings:);
 		
 		[_cancelButton sizeToFit];
 		
@@ -428,14 +428,14 @@
 		
 		tFrame.origin.x=NSMaxX(tOriginalFrame)-NSWidth(tFrame);
 		
-		[_cancelButton setFrame:tFrame];
+		_cancelButton.frame=tFrame;
 	}
 	else
 	{
-		[_cancelButton setTitle:NSLocalizedStringFromTableInBundle(@"Cancel",@"Localizable",[NSBundle bundleForClass:[self class]],@"")];
-		[_cancelButton setAction:@selector(closeDialog:)];
+		_cancelButton.title=NSLocalizedStringFromTableInBundle(@"Cancel",@"Localizable",[NSBundle bundleForClass:[self class]],@"");
+		_cancelButton.action=@selector(closeDialog:);
 		
-		[_cancelButton setFrame:_savedCancelButtonFrame];
+		_cancelButton.frame=_savedCancelButtonFrame;
 	}
 }
 
